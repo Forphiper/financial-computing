@@ -33,7 +33,7 @@ end_time = time.perf_counter()
 elapsed_time = end_time - start_time
 print(f"Elapsed time: {elapsed_time:.4f} seconds\n")
 
-url = "https://www.csie.ntu.edu.tw/~r11922148/trinomial.csv"
+url = "https://www.csie.ntu.edu.tw/~r11922148/fc2023/trinomial.csv"
 wait_time = 20
 print(f"Trying to read data from {url}")
 while True:
