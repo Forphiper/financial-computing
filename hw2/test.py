@@ -1,6 +1,7 @@
 from hw2 import binomial_tree 
 import pandas as pd
 import itertools
+from tqdm import tqdm
 
 # generate testcases
 S_values = [55.8, 100, 150.99]
@@ -10,8 +11,12 @@ s_values = [25.82, 30, 30.54]
 T_values = [0.5, 1.8, 3.3]
 n_values = [100, 200, 300]
 
+
+total_iterations = len(list(itertools.product(S_values, K_values, r_values, s_values, T_values, n_values)))
+print(f"Number of testcases = {total_iterations}")
+
 prices = []
-for values in itertools.product(S_values, K_values, r_values, s_values, T_values, n_values):
+for values in tqdm(itertools.product(S_values, K_values, r_values, s_values, T_values, n_values), total=total_iterations):
     S, K, r, s, T, n = values
     prices.append(round(binomial_tree(S, K, r, s, T, n), 4))
 
