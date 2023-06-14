@@ -1,6 +1,6 @@
 # Principles of Financial Computing
 
-## HW1
+## HW1: Amortization schedule
 * Write a program to generate an amortization schedule for repaying a loan. There are two interest rates. 
 * Inputs: 
     * (1) L (loan amount in dollars), 
@@ -24,7 +24,7 @@
     * (4) The headers of the columns must be as in the sample file. 
     * (5) Start from Time 0 instead of Time 1. This means the value of the first row will be 0, 0, 0, 0, L.
 
-## HW2
+## HW2: Pricing Bermudan option using binomial tree
 * Write a binomial tree program to price a Bermudan option. The early exercise time points are T/4 and 3T/4 from now, where T is the time to maturity. The payoff function is max(K - S + 1,0). 
 * Inputs: 
     * (1) S (stock price), 
@@ -39,7 +39,7 @@
     * (1) The interest rate and volatility should be in percent. For example, if the interest rate is 5% and volatility 30%, the inputs are 5 and 30, respectively. 
     * (2) No need to make sure the early exercise dates are aligned with time steps of the tree.
 
-## HW3
+## HW3: Pricing barrier call using trinomial tree
 * Write a trinomial tree program to price a down-and-out barrier call.
 * Inputs: 
     * (1) S (stock price), 
@@ -55,7 +55,7 @@
     * (1) The interest rate and volatility should be in percent. For example, if the interest rate is 5% and volatility 30%, the inputs are 5 and 30, respectively. 
     * (2) The trinomial tree must matches the barrier.
 
-## HW4
+## HW4: Pricing American put using Least Square Monte Carlo
 * Implement the Least Square Monte Carlo method to price an American option. Use 1, x, x^2, x^3 as the basis functions. 
 * Inputs
     * (1) S (stock price), 
