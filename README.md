@@ -55,7 +55,7 @@
     * (1) The interest rate and volatility should be in percent. For example, if the interest rate is 5% and volatility 30%, the inputs are 5 and 30, respectively. 
     * (2) The trinomial tree must matches the barrier.
 
-## HW4: Pricing American put using Least Square Monte Carlo
+## HW4: Pricing American put using Least-Squares Monte Carlo
 * Implement the Least Square Monte Carlo method to price an American option. Use 1, x, x^2, x^3 as the basis functions. 
 * Inputs
     * (1) S (stock price), 
